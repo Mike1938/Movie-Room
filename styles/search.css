@@ -7,37 +7,9 @@ body, html{
     color: #ffff;
     margin: 0;
 }
-/*? Navigation bar styles */
-#liContainer{
-    background-color: #D86767;
-    list-style-type: none;
-    height: 40px;
-    padding: 0;
-    margin: 0;
-}
-.links{
-    transition: ease-in 200ms;
-    float: left;
-    padding: 0 8px;
-    display: inline;
-    line-height: 40px;
-}
-.links:hover{
-    transition: ease-in 200ms;
-    background-color: #b84e4e;
-}
 .links:nth-of-type(3){
     background-color: #b84e4e;
 }
-.links:nth-of-type(2) ,.links:nth-of-type(3){
-    float: right;
-    padding: 0 8px;
-}
-.navAlinks{
-    color: #ffff;
-    text-decoration: none;
-}
-/*?=============================== */
 #container{
     height: 50%;
     margin: 10%;

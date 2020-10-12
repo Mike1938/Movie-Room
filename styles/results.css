@@ -1,0 +1,36 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+body, html{
+    margin: 0;
+    background-color: #313B4E;
+}
+Header{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffff;
+}
+Header h1{
+    margin-left: 10px;
+}
+form{
+    text-align: center;
+}
+#searchForm{
+    font-size: 1rem;
+    text-indent: 10px;
+    width: 50%;
+    height: 30px;
+    border-radius: 8px;
+}
+#formButton{
+    color: #ffff;
+    background-color: #FF6363;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 10%;
+}
