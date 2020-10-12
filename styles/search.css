@@ -1,0 +1,32 @@
+
+body, html{
+    height: 100%;
+    background-color: #313B4E;
+    color: #ffff;
+    margin: 0;
+}
+#container{
+    height: 50%;
+    margin: 10%;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #494769 ;
+    gap: 30px;
+    border-radius: 12px;
+}
+label{
+    font-size: 3rem;
+}
+#searchForm{
+    height: 40px;
+    border-radius: 8px;
+}
+button{
+    margin: 0 auto;
+    height: 30px;
+    width: 50%;
+}
