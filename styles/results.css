@@ -34,3 +34,13 @@ form{
     height: 30px;
     width: 10%;
 }
+
+#movieContainer{
+    margin: 50px;
+    border-radius: 12px;
+    background-color: #494769;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ffff;
+}
