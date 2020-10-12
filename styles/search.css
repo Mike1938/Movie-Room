@@ -5,6 +5,28 @@ body, html{
     color: #ffff;
     margin: 0;
 }
+/*? Navigation bar styles */
+#liContainer{
+    background-color: #D86767;
+    list-style-type: none;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.links{
+    display: inline;
+    line-height: 40px;
+    margin-left: 10px ;
+}
+.links:nth-of-type(2) ,.links:nth-of-type(3){
+    float: right;
+    margin: 0 10px;
+}
+.navAlinks{
+    color: #ffff;
+    text-decoration: none;
+}
+/*?=============================== */
 #container{
     height: 50%;
     margin: 10%;
@@ -24,8 +46,14 @@ label{
 #searchForm{
     height: 40px;
     border-radius: 8px;
+    font-size: 1rem;
 }
 button{
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF6363;
     margin: 0 auto;
     height: 30px;
     width: 50%;
