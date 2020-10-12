@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Raleway', sans-serif;
+}
 body, html{
     height: 100%;
     background-color: #313B4E;
@@ -14,13 +16,22 @@ body, html{
     margin: 0;
 }
 .links{
+    transition: ease-in 200ms;
+    float: left;
+    padding: 0 8px;
     display: inline;
     line-height: 40px;
-    margin-left: 10px ;
+}
+.links:hover{
+    transition: ease-in 200ms;
+    background-color: #b84e4e;
+}
+.links:nth-of-type(3){
+    background-color: #b84e4e;
 }
 .links:nth-of-type(2) ,.links:nth-of-type(3){
     float: right;
-    margin: 0 10px;
+    padding: 0 8px;
 }
 .navAlinks{
     color: #ffff;
@@ -37,13 +48,15 @@ body, html{
     display: grid;
     grid-template-columns: 1fr;
     background-color: #494769 ;
+    box-shadow: 2px 2px 10px #272729;
     gap: 30px;
     border-radius: 12px;
 }
 label{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 #searchForm{
+    text-indent: 10px;
     height: 40px;
     border-radius: 8px;
     font-size: 1rem;

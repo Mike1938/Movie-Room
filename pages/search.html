@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/search.css">
     <title>Movie Room</title>
 </head>
@@ -16,11 +17,12 @@
             <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
         </ul>
     </nav>
-    <form id="container" action="/results" method="GET" autocomplete="off">
+    <form id="container" action="/results" method="GET" autocomplete="off" onsubmit="return validate()">
         <label for="search">Movie Title</label>
-        <input id="searchForm" name="search" type="text">
+        <input id="searchForm" name="search" type="text" placeholder="Movie Title">
         <button>Search</button>
     </form>
+    <script src="/scripts/validateForms.js"></script>
 </body>
 
 </html>
