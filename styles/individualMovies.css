@@ -12,16 +12,16 @@ p{
 #movie{
     background-color: #494769;
     border-radius: 12px;
+    padding: 100px;
     display: grid;
-    height: 900px;
-    margin: 5%;
+    margin: 150px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 #sec1{
     justify-self: center;
     align-self: center;
-    margin-left: 30px ;
+    margin-left: 10px ;
 }
 #sec1 img{
     width: 400px;
@@ -49,4 +49,33 @@ span{
 }
 #sec2 , #sec3{
     margin-right: 100px;
+}
+
+@media(max-width: 1854px){
+    #movie{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #sec1{
+        margin-top: 30px;
+    }
+    #sec2, #sec3{
+        padding-left: 30px ;
+    }
+}
+@media(max-width: 1481px){
+    #sec1{
+        margin: 30px auto;
+    }
+    #movie{
+        grid-template-columns: 1fr;
+    } 
+}
+@media(max-width:895px){
+    #sec1 img{
+        width: 300px;
+        height: 450px;
+    }
+    /* #sec1, #sec2{
+        padding-left: 20px ;
+    } */
 }

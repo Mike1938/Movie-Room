@@ -21,7 +21,7 @@ axios(`http://www.omdbapi.com/?apikey=${key.apiKey}&i=${movieId.get("movieId")}`
             <p><span>Director:</span> ${movie.Director}</p>
             <p><span>Writers:</span> ${movie.Writer}</p>
             <p><span>Actors:</span> ${movie.Actors}</p>
-            <p><span>Director:</span> ${movie.Director}</p>
+            <p><span>Production:</span> ${movie.Production}</p>
             </div>`
         )
     })
