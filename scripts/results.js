@@ -18,8 +18,8 @@ $(document).ready(function () {
                     <h3>${movieTitle}</h3>
                     <img class"size" src="${movie.Poster}" alt="Img not found">
                     <p>${movie.Year}</p>
-                    <form action="#" method="GET">
-                    <button value="${movie.imdbID}">More Info</button>
+                    <form action="/pages/individualMovies.html" method="GET">
+                    <button name="movieId" value="${movie.imdbID}">More Info</button>
                     </form>
                     </div>`
                     )
