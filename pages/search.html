@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/minFooter.css">
     <link rel="stylesheet" href="/styles/search.css">
     <title>Movie Room</title>
 </head>
@@ -18,11 +21,34 @@
             <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
         </ul>
     </nav>
-    <form id="container" action="results.html" method="GET" autocomplete="off" onsubmit="return validate()">
+    <form id="formContainer" action="results.html" method="GET" autocomplete="off" onsubmit="return validate()">
         <label for="search">Movie Title</label>
         <input id="searchForm" name="search" type="text" placeholder="Movie Title">
         <button>Search</button>
     </form>
+    <footer>
+        <div id="container">
+            <div>
+                <p><a class="socials" href="https://github.com/Mike1938" target="_"><i
+                            class="fab fa-github fa-2x"></i></a></p>
+            </div>
+            <div>
+                <h3>Other Pages</h3>
+                <ul id="otherPages">
+                    <li><a href="/pages/index.html">HomePage</a></li>
+                    <li><a href="/pages/search.html">Search for movies</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <p><a class="socials" href="https://www.facebook.com/" target="_"><i
+                            class="fab fa-facebook fa-2x"></i></a></p>
+            </div>
+        </div>
+        <p><a href="#top"><i class="fas fa-arrow-up fa-lg"></i> Back to top</a></p>
+        <hr>
+        <p>&copy Malsan inc.</p>
+    </footer>
     <script src="/scripts/validateForms.js"></script>
 </body>
 

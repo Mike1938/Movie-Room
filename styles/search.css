@@ -10,7 +10,7 @@ body, html{
 .links:nth-of-type(3){
     background-color: #b84e4e;
 }
-#container{
+#formContainer{
     height: 50%;
     margin: 10%;
     padding: 0 20px;
@@ -28,10 +28,16 @@ label{
     font-size: 4rem;
 }
 #searchForm{
+    border: none;
     text-indent: 10px;
     height: 40px;
     border-radius: 8px;
     font-size: 1rem;
+}
+.valError::placeholder {
+    text-align: center;
+    font-weight: bold;
+    color: red;
 }
 button{
     font-size: 1rem;
@@ -42,4 +48,13 @@ button{
     margin: 0 auto;
     height: 30px;
     width: 50%;
+    transition: ease-in 100ms;
+}
+button:hover{
+    transition: ease-in 100ms;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #312f2f;
+}
+footer{
+    margin-top: 270px;
 }
