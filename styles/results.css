@@ -35,6 +35,10 @@ form{
     height: 30px;
     width: 100px;
 }
+img{
+    width: 300px;
+    height: 450px;
+}
 #movieContainer h3{
     margin: 20px 15px ;
 }
@@ -94,6 +98,13 @@ footer p{
     color: #ffff;
     text-align: center;
     margin-bottom: 0;
+}
+footer a:hover{
+    transition: ease-in 100ms;
+    text-shadow: 3px 2px 10px #831818;
+}
+.socials{
+    color: #ffff;
 }
 @media(max-width: 1577px){
     #movieContainer{
