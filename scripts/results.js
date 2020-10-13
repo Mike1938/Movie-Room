@@ -9,9 +9,13 @@ $(document).ready(function () {
                 console.log(results)
                 $("h1").text(`Movie results for "${movieSearch.get("search")}"`)
                 $.each(results, (index, movie) => {
+                    let movieTitle = movie.Title;
+                    if (movieTitle.length > 35) {
+                        movieTitle = `${movie.Title.slice(0, 40)} ...`;
+                    }
                     $("#movieContainer").append(
                         `<div>
-                    <h3>${movie.Title}</h3>
+                    <h3>${movieTitle}</h3>
                     <img class"size" src="${movie.Poster}" alt="Img not found">
                     <p>${movie.Year}</p>
                     <form action="#" method="GET">
