@@ -5,18 +5,48 @@ body, html{
     background-color: #313B4E;
     color: white;
 }
+p{
+    font-size: 1.5rem;
+}
 
 #movie{
     background-color: #494769;
     border-radius: 12px;
     display: grid;
-    height: 70%;
-    margin: 10%;
-    align-items: center;
+    height: 900px;
+    margin: 5%;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
-#movie img{
-    width: 300px;
-    height: 450px;
-    margin: 0 auto;
+#sec1{
+    justify-self: center;
+    align-self: center;
+    margin-left: 30px ;
+}
+#sec1 img{
+    width: 400px;
+    height: 600px;
+}
+#sec2{
+    /* margin-top: 150px; */
+    align-self: center;
+}
+h1{
+    margin-top: 0;
+    align-items: flex-start;
+    font-size: 3rem;
+}
+span{
+    color: #e05959;
+    font-weight: bold;
+}
+#year{
+    font-size: 2rem;
+}
+#sec3{
+    /* margin-top: 150px; */
+    align-self: center;
+}
+#sec2 , #sec3{
+    margin-right: 100px;
 }
