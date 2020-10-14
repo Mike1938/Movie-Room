@@ -1,10 +1,12 @@
 /*? Navigation bar styles */
 #liContainer{
-    background-color: #D86767;
-    list-style-type: none;
-    height: 40px;
-    padding: 0;
+    position: fixed;
     margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: #D86767;
+    width: 100%;
 }
 .links{
     transition: ease-in 200ms;
