@@ -5,7 +5,14 @@ body, html{
     background-color: #313B4E;
     color: white;
 }
-p{
+#pageContainer{
+    position: relative;
+    min-width: 100vh;
+}
+#content{
+    padding-bottom: 26rem;
+}
+.info{
     font-size: 1.5rem;
 }
 

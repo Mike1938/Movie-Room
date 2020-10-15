@@ -5,6 +5,13 @@ body, html{
     margin: 0;
     background-color: #313B4E;
 }
+#content{
+    padding-bottom: 15.5rem ;
+}
+#pageContainer{
+    position: relative;
+    min-height: 100%;
+}
 Header{
     margin-top: 50px;
     display: grid;
@@ -78,9 +85,7 @@ img{
     font-weight: bold;
     color: red;
 }
-footer{
-    margin-top: 10%;
-}
+
 @media(max-width: 1577px){
     #movieContainer{
         grid-template-columns: repeat(3,1fr);

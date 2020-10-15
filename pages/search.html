@@ -14,41 +14,45 @@
 </head>
 
 <body>
-    <nav>
-        <ul id="liContainer">
-            <li class="links"><a class="navAlinks" href="/pages/index.html">Home</a></li>
-            <li class="links"><a class="navAlinks" href="/pages/index.html">About</a></li>
-            <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
-        </ul>
-    </nav>
-    <form id="formContainer" action="results.html" method="GET" autocomplete="off" onsubmit="return validate()">
-        <label for="search">Movie Title</label>
-        <input id="searchForm" name="search" type="text" placeholder="Movie Title">
-        <button>Search</button>
-    </form>
-    <footer>
-        <div id="container">
-            <div>
-                <p><a class="socials" href="https://github.com/Mike1938" target="_"><i
-                            class="fab fa-github fa-2x"></i></a></p>
-            </div>
-            <div>
-                <h3>Other Pages</h3>
-                <ul id="otherPages">
-                    <li><a href="/pages/index.html">HomePage</a></li>
-                    <li><a href="/pages/search.html">Search for movies</a></li>
-                    <li><a href="/pages/about.html">About Us</a></li>
+    <div id="pageContainer">
+        <div id="content">
+            <nav>
+                <ul id="liContainer">
+                    <li class="links"><a class="navAlinks" href="/pages/index.html">Home</a></li>
+                    <li class="links"><a class="navAlinks" href="/pages/index.html">About</a></li>
+                    <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
                 </ul>
-            </div>
-            <div>
-                <p><a class="socials" href="https://www.facebook.com/" target="_"><i
-                            class="fab fa-facebook fa-2x"></i></a></p>
-            </div>
+            </nav>
+            <form id="formContainer" action="results.html" method="GET" autocomplete="off" onsubmit="return validate()">
+                <label for="search">Movie Title</label>
+                <input id="searchForm" name="search" type="text" placeholder="Movie Title">
+                <button>Search</button>
+            </form>
         </div>
-        <p><a href="#top"><i class="fas fa-arrow-up fa-lg"></i> Back to top</a></p>
-        <hr>
-        <p>&copy Malsan inc.</p>
-    </footer>
+        <footer>
+            <div id="container">
+                <div>
+                    <p><a class="socials" href="https://github.com/Mike1938" target="_"><i
+                                class="fab fa-github fa-2x"></i></a></p>
+                </div>
+                <div>
+                    <h3>Other Pages</h3>
+                    <ul id="otherPages">
+                        <li><a href="/pages/index.html">HomePage</a></li>
+                        <li><a href="/pages/search.html">Search for movies</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p><a class="socials" href="https://www.facebook.com/" target="_"><i
+                                class="fab fa-facebook fa-2x"></i></a></p>
+                </div>
+            </div>
+            <p><a href="#top"><i class="fas fa-arrow-up fa-lg"></i> Back to top</a></p>
+            <hr>
+            <p>&copy Malsan inc.</p>
+        </footer>
+    </div>
     <script src="/scripts/validateForms.js"></script>
 </body>
 

@@ -10,18 +10,18 @@ axios(`http://www.omdbapi.com/?apikey=${key.apiKey}&i=${movieId.get("movieId")}`
             `<div id="sec1"><img id="poster" src="${movie.Poster}" alt=""></div>
             <div id="sec2">
             <h1 id="title">${movie.Title} <span id="year">(${movie.Year})</span></h1>
-            <p>${movie.Plot}</p>
-            <p><span>Genre:</span> ${movie.Genre}</p>
-            <p><span>Runtime:</span> ${movie.Runtime}</p>
-            <p><span>Released:</span> ${movie.Released}</p>
+            <p class="info">${movie.Plot}</p>
+            <p class="info"><span>Genre:</span> ${movie.Genre}</p>
+            <p class="info"><span>Runtime:</span> ${movie.Runtime}</p>
+            <p class="info"><span>Released:</span> ${movie.Released}</p>
             </div>
             <div id="sec3">
-            <p><span>Rated:</span> ${movie.Rated}</p>
-            <p><span>Rating:</span> ${movie.imdbRating}</p>
-            <p><span>Director:</span> ${movie.Director}</p>
-            <p><span>Writers:</span> ${movie.Writer}</p>
-            <p><span>Actors:</span> ${movie.Actors}</p>
-            <p><span>Production:</span> ${movie.Production}</p>
+            <p class="info"><span>Rated:</span> ${movie.Rated}</p>
+            <p class="info"><span>Rating:</span> ${movie.imdbRating}</p>
+            <p class="info"><span>Director:</span> ${movie.Director}</p>
+            <p class="info"><span>Writers:</span> ${movie.Writer}</p>
+            <p class="info"><span>Actors:</span> ${movie.Actors}</p>
+            <p class="info"><span>Production:</span> ${movie.Production}</p>
             </div>`
         )
     })

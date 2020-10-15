@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     background-color: #D86767;
+    box-shadow: 2px 2px 15px #242121;
     width: 100%;
 }
 .links{
