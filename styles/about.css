@@ -1,0 +1,14 @@
+body, html{
+    height: 100%;
+    background-color: #313B4E;
+    font-family: 'Raleway', sans-serif;
+}
+#pageContainer{
+    min-width: 100vh;
+}
+#content{
+    padding-bottom: 2.5rem;
+}
+header li:nth-of-type(2){
+    background-color: #b84e4e;
+}
