@@ -12,3 +12,21 @@ body, html{
 header li:nth-of-type(2){
     background-color: #b84e4e;
 }
+#thisWebsite{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#goal{
+    background-color: #7288C1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#who{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact{
+    background-color: #7288C1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
