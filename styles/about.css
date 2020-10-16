@@ -5,7 +5,7 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 #pageContainer{
-    min-width: 100vh;
+    min-width: 100%;
 }
 #content{
     /* padding-bottom: 2.5rem; */
@@ -55,20 +55,93 @@ p{
     font-size: 1.5rem;
 }
 img{
-    margin: 100px;
     padding: 10px 70px;
     border-radius: 15px;
     background-color: #494769;
     box-shadow: 1px 10px 10px rgba(0,0,0,0.15);
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 .info{
-    margin: 50px;
+    margin: 0 50px;
 }
 hr{
     margin: 0;
     border: 0;
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230, 100, 100, 0.85), rgba(0, 0, 0, 0));
+}
+#formContainer{
+    margin: 100px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #494769;
+}
+form{
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+input, button{
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    background-color: #df6565;
+    color: #ffff;
+}
+textarea{
+    border-radius: 10px;
+}
+#formContainer h1{
+    margin: 0;
+    margin-bottom: 10px;
+}
+#formContainer li{
+    list-style: none;
+    display: inline;
+    padding: 0 50px;
+}
+#socialList{
+    margin-top: 20px;
+}
+#formContainer ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#formContainer a{
+    color: #ffff;
+    transition: ease-in 100ms;
+}
+#formContainer a:hover{
+    transition: ease-in 100ms;
+    color: #df6565;
+}
+@media(max-width: 1267px){
+    img{
+        width: 500px;
+        height: 500px;
+    }
+    #thisWebsite{
+        grid-template-columns: 1fr;
+    }
+    #goal{
+        grid-template-columns: 1fr;
+    }
+    #who{
+        grid-template-columns: 1fr;
+    }
+    #contact{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 580px){
+    img{
+        width: 300px;
+        height: 300px;
+    }
 }
