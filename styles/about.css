@@ -5,6 +5,7 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 #pageContainer{
+    position: relative;
     min-width: 100%;
 }
 #content{
@@ -28,8 +29,8 @@ img{
     border-radius: 15px;
     background-color: #494769;
     box-shadow: 1px 10px 10px rgba(0,0,0,0.15);
-    width: 600px;
-    height: 600px;
+    width: 60%;
+    height: 60%;
 }
 hr{
     margin: 0;
@@ -145,13 +146,18 @@ textarea{
 }
 /*? ========================= */
 @media(max-width: 1267px){
-    
+    #content h1{
+        font-size: 2rem;
+    }
+    #content p{
+        font-size: 1.2rem;
+    }
     h1{
         margin-top: 0;
     }
     img{
-        width: 500px;
-        height: 500px;
+        width: 35%;
+        height: 35%;
     }
     #contact img{
         display: none;
@@ -173,7 +179,7 @@ textarea{
 }
 @media(max-width: 580px){
     img{
-        width: 300px;
-        height: 300px;
+        width: 50%;
+        height: 50%;
     }
 }
