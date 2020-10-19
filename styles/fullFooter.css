@@ -4,7 +4,7 @@
     width: 100%;
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     justify-items: center;
     background-color: #1C1919;
@@ -14,12 +14,16 @@
 
 }
 #top{
-    grid-column: 1/6;
+    grid-column: 1/7;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
 }
 #copyRight{
-    grid-column: 1/6;
+    grid-column: 1/7;
 }
-
+#footerContainer h2{
+    color: #D86767;
+}
 #footerContainer a{
     color: #ffff;
     text-decoration: none;
@@ -43,29 +47,40 @@
 #otherPages{
     text-align: end;
 }
+#footerContainer #copyRight{
+    width: 100%;
+    text-align: center;
+}
+#footerContainer #copyRight p{
+    font-size: 1rem;
+}
 @media(max-width: 700px){
     #footerContainer{
         text-align: center;
         grid-template-columns: 1fr;
+        gap: 0;
     }
     #otherPages{
         text-align:center;
         grid-row: 2/2;
     }
-    #top{
+    #email{
         grid-row: 3/3;
     }
-    #copyRight{
+    #gitHub{
         grid-row: 4/4;
     }
-    #gitHub{
+    #faceBook{
         grid-row: 5/5;
     }
-    #faceBook{
+    #twitter{
         grid-row: 6/6;
     }
-    #email{
+    #top{
         grid-row: 7/7;
+    }
+    #copyRight{
+        grid-row: 8/8;
     }
     #pageSections, #otherPages{
         margin: 0;
