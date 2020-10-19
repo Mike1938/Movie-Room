@@ -1,8 +1,74 @@
 #footerContainer{
+    box-shadow: 2px 2px 20px rgba(53, 50, 50, 0.5);
     color: #ffff;
     width: 100%;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
     background-color: #1C1919;
+}
+#pageSections, #otherPages{
+    margin: 0 20px;
+
+}
+#top{
+    grid-column: 1/6;
+}
+#copyRight{
+    grid-column: 1/6;
+}
+
+#footerContainer a{
+    color: #ffff;
+    text-decoration: none;
+    transition: ease-in 100ms;
+}#footerContainer a:hover{
+    transition: ease-in 100ms;
+    color: #FF6363;
+}
+#footerContainer ul{
+    list-style: none;
+    padding: 0;
+}
+#footerContainer li{
+    padding-top: 20px;
+}
+#footerContainer i{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px
+}
+#otherPages{
+    text-align: end;
+}
+@media(max-width: 700px){
+    #footerContainer{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    #otherPages{
+        text-align:center;
+        grid-row: 2/2;
+    }
+    #top{
+        grid-row: 3/3;
+    }
+    #copyRight{
+        grid-row: 4/4;
+    }
+    #gitHub{
+        grid-row: 5/5;
+    }
+    #faceBook{
+        grid-row: 6/6;
+    }
+    #email{
+        grid-row: 7/7;
+    }
+    #pageSections, #otherPages{
+        margin: 0;
+    
+    }
 }
