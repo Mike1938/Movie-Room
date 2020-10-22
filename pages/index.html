@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Movie Room</title>
 </head>
 
 <body>
-    <h1>Welcome to the Movie Room</h1>
+    <div id="pageContainer">
+        <div id="content">
+            <header>
+                <nav>
+                    <ul id="liContainer">
+                        <li class="links"><a class="navAlinks" href="/pages/index.html">Home</a></li>
+                        <li class="links"><a class="navAlinks" href="/pages/about.html">About</a></li>
+                        <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <a name="top"></a>
+            <section id="mainSearch">
+                <div id="searchGrid">
+                    <div>
+                        <h1>Movie Room</h1>
+                    </div>
+                    <div>
+                        <form method="GET" action="/pages/results.html" onsubmit="return validate()" autocomplete="off">
+                            <label for="search">Search For Title</label>
+                            <input id="searchForm" name="search" type="text">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/scripts/validateForms.js"></script>
 </body>
 
 </html>

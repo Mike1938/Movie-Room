@@ -1,0 +1,58 @@
+body,html{
+    background-color: #313B4E;
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+}
+header li:nth-of-type(1){
+    background-color: #b84e4e;
+}
+#pageContainer{
+    position: relative;
+    min-height: 100%;
+}
+#content{
+    /* height: 100%; */
+}
+#mainSearch{
+    height: 100vh;
+    background-image: url("/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+    background-size: cover;
+}
+#searchGrid{
+    margin-top: 20px;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 100px;
+}
+#searchGrid h1{
+    font-size: 4.5rem;
+    margin: 0;
+}
+#mainSearch form{
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    gap: 10px;
+}
+#mainSearch input{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+#mainSearch button{
+    background-color: #FF6363;
+    color: #ffff;
+    width: 200px;
+    justify-self: center;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+#mainSearch label{
+    font-size: 2rem;
+}
