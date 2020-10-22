@@ -3,6 +3,7 @@
 }
 body, html{
     margin: 0;
+    height: 100%;
     background-color: #313B4E;
 }
 #content{
@@ -85,7 +86,10 @@ img{
     font-weight: bold;
     color: red;
 }
-
+#wasNotFound{
+    grid-column: 1/5;
+    font-size: 3rem;
+}
 @media(max-width: 1577px){
     #movieContainer{
         grid-template-columns: repeat(3,1fr);
