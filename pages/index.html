@@ -33,10 +33,34 @@
                     <div>
                         <form method="GET" action="/pages/results.html" onsubmit="return validate()" autocomplete="off">
                             <label for="search">Search For Title</label>
-                            <input id="searchForm" name="search" type="text">
+                            <input id="searchForm" name="search" type="text" placeholder="Write Movie title">
                             <button>Search</button>
                         </form>
                     </div>
+                </div>
+            </section>
+            <section id="feature">
+                <div id="featureGrid">
+                    <h1>Feature Films</h1>
+                    <div>
+                        <img src="/images/tenet.jpg">
+                        <form method="GET" action="/pages/individualMovies.html">
+                            <button name="movieId" value="tt6723592">More Info</button>
+                        </form>
+                    </div>
+                    <div>
+                        <img src="/images/enola.jpg">
+                        <form method="GET" action="/pages/individualMovies.html">
+                            <button name="movieId" value="tt7846844">More Info</button>
+                        </form>
+                    </div>
+                    <div>
+                        <img src="/images/theDevil.jpg">
+                        <form method="GET" action="/pages/individualMovies.html">
+                            <button name="movieId" value="tt7395114">More Info</button>
+                        </form>
+                    </div>
+
                 </div>
             </section>
         </div>
