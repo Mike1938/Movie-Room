@@ -6,9 +6,13 @@ axios(`http://www.omdbapi.com/?apikey=${key.apiKey}&plot=full&i=${movieId.get("m
         }
         console.log(response.data);
         const movie = response.data;
+        let moviePoster = movie.Poster;
+        if (moviePoster === "N/A") {
+            moviePoster = "/images/notFound.jpg";
+        }
         $("#movie").append(
             `
-                <div id="moviePoster"><img id="poster" src="${movie.Poster}" alt=""></div>
+                <div id="moviePoster"><img id="poster" src="${moviePoster}" alt=""></div>
                     <div id="shortInfo">
                         <h1 id="title">${movie.Title}</h1>
                     <ul>
