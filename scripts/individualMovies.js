@@ -20,7 +20,7 @@ axios(`http://www.omdbapi.com/?apikey=${key.apiKey}&plot=full&i=${movieId.get("m
                         <li class="info"><span>Runtime:</span> ${movie.Runtime}</li>
                         <li class="info"><span>Released:</span> ${movie.Released}</li>
                         <li class="info"><span>Rated:</span> ${movie.Rated}</li>
-                        <li class="info"><span>Rating:</span> ${movie.imdbRating}/10</li>
+                        <li class="info"><span>Rating:</span> <span id="ratingStar"><i class="fas fa-star fa-xs"></i></span> ${movie.imdbRating}/10</li>
                         <li class="info"><span>Awards:</span> ${movie.Awards}</li>
                     </ul>
                 </div>

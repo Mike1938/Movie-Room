@@ -57,11 +57,12 @@ button{
     border: none;
     border-radius: 8px;
     background-color: #FF6363;
+    transition: ease-in 100ms;
 }
 button:hover{
     transition: ease-in 100ms;
     cursor: pointer;
-    box-shadow: 2px 2px 10px #312f2f;
+    background-color: #ce3939;
 }
 #featMovies h1{
     font-size: 4rem;

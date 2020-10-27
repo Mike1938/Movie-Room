@@ -15,6 +15,9 @@ body, html{
 .info{
     font-size: 1.5rem;
 }
+#ratingStar{
+    color: #ece24e;
+}
 span{
     color: #f04545;
 }
@@ -48,6 +51,25 @@ span{
     margin-top: 0;
     font-size: 2rem;
 }
+#searchAgain{
+    justify-self: center;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+#searchAgain button{
+    color: #ffff;
+    background-color: #f04545;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    transition: ease-in 100ms;
+}
+#searchAgain button:hover{
+    cursor: pointer;
+    transition: ease-in 100ms;
+    background-color: #ac3232;
+}
 ul{
     padding: 0;
 }
@@ -75,5 +97,11 @@ ul{
     }
     #lgInfo{
         padding-left: 0;
+    }
+    #searchAgain{
+        grid-row: 5/6;
+    }
+    #searchAgain button{
+        width: 300px;
     }
 }
