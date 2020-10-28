@@ -103,7 +103,7 @@ hr{
 }
 .movieInfo{
     text-align: left;
-    background-color: rgba(54, 27, 97, 0.472);
+    background-color: rgba(54, 27, 97, 0.623);
     border-radius: 10px;
     font-size: 1.5rem;
     grid-column: 2/3;
@@ -131,6 +131,7 @@ hr{
     height: 450px;
 }
 /** ===================== */
+/*? enola stlyings */
 #enola{
     background-image: url("/images/EnolaDarken.jpg");
     background-size: cover;
@@ -142,6 +143,7 @@ hr{
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
+/** the devil all the time */
 #theDevil{
     background-image: url("/images/theDevilAllTheTimeDarken.jpg");
     background-size: cover;
@@ -153,7 +155,19 @@ hr{
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
-/*? Feature section styles */
+/*? the social dilemma stylings */
+#socialDilemma{
+    background-image: url("/images/theSocialDilemmaDarken.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+/*?! Feature section styles */
 #feature{
     height: 100vh;
 }
@@ -194,6 +208,7 @@ img{
     background-color: #be4343;
     cursor: pointer;
 }
+/*? media queries */
 @media(max-width: 1855px){
     #featureGrid h1{
         grid-column: 1/4 ;
@@ -203,7 +218,7 @@ img{
     }
 }
 @media(max-width: 1325px){
-    #tenet, #enola, #theDevil{
+    #tenet, #enola, #theDevil, #socialDilemma{
         grid-template-columns: 1fr;
         grid-row: 1fr;
     }
