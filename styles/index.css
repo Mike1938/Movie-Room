@@ -21,6 +21,7 @@ header li:nth-of-type(1){
     height: 100vh;
     background-image: url("/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 #searchGrid{
@@ -82,6 +83,7 @@ hr{
 #tenet{
     background-image: url("/images/tenetDarken.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
@@ -136,6 +138,7 @@ hr{
     background-image: url("/images/EnolaDarken.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     text-align: center;
     display: grid;
@@ -148,6 +151,7 @@ hr{
     background-image: url("/images/theDevilAllTheTimeDarken.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     text-align: center;
     display: grid;
@@ -159,6 +163,7 @@ hr{
 #socialDilemma{
     background-image: url("/images/theSocialDilemmaDarken.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
@@ -167,36 +172,39 @@ hr{
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
-/*?! Feature section styles */
-#feature{
-    height: 100vh;
-}
+/*?! top movies section styles */
 #featureGrid{
-    height: 85%;
+    height: 100vh;
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    align-items: center;
+    grid-template-columns: repeat(3,1fr);
 }
-#featureGrid h1{
-    grid-column: 1/5;
-    font-size: 3rem;
-    background-color: #DE5B5B;
-    justify-self: center;
-    padding: 20px 100px;
-    border-radius: 12px;
+#inception{
+    height: 100%;
+    background-image: url("/images/inception_.jpg");
+    background-position: center;
+    background-size: cover;
 }
-img{
-    width: 300;
-    height: 450px;
-    background-color: #494769;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(37, 37, 39, 0.274);
+#joker{
+    height: 100%;
+    background-image: url("/images/joker.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#fightClub{
+    height: 100%;
+    background-image: url("/images/fightClub.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#featureGrid form{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 #featureGrid button{
     background-color: #FF6363;
+    width: 30%;
+    margin: 0 50px ;
     border: none;
     color: #ffff;
     padding: 10px 20px;
@@ -210,11 +218,8 @@ img{
 }
 /*? media queries */
 @media(max-width: 1855px){
-    #featureGrid h1{
-        grid-column: 1/4 ;
-    }
     #featureGrid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media(max-width: 1325px){
@@ -243,26 +248,11 @@ img{
     #tenet li{
         font-size: 1.5rem;
     }
-    #featureGrid h1{
-        grid-column: 1/3 ;
-    }
-    #featureGrid{
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 @media(max-width: 898px){
     .movieFrame{
         width: 500px;
         height: 300px;
-    }
-    #featureGrid h1{
-        grid-column: 1/2;
-    }
-    #featureGrid{
-        grid-template-columns: 1fr;
-    }
-    #featureGrid h1{
-        font-size: 2rem;
     }
     #mainSearch form{
         grid-template-columns: 400px;
