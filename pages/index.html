@@ -30,6 +30,7 @@
                 <div id="searchGrid">
                     <div>
                         <h1>Movie Room</h1>
+                        <p>The right place to search for the best movies</p>
                     </div>
                     <div>
                         <form method="GET" action="/pages/results.html" onsubmit="return validate()" autocomplete="off">
@@ -141,22 +142,32 @@
                 </div>
             </section>
             <hr>
+            <a name="topMovies"></a>
             <section id="feature">
                 <div id="featureGrid">
-                    <div id="inception">
-                        <form method="GET" action="/pages/individualMovies.html">
-                            <button name="movieId" value="tt1375666">More Info</button>
-                        </form>
+                    <div class="fadeBox" id="inception">
+                        <div class="fadeInfo">
+                            <h2>Inception</h2>
+                            <form method="GET" action="/pages/individualMovies.html">
+                                <button name="movieId" value="tt1375666">More Info</button>
+                            </form>
+                        </div>
                     </div>
-                    <div id="joker">
-                        <form method="GET" action="/pages/individualMovies.html">
-                            <button name="movieId" value="tt7286456">More Info</button>
-                        </form>
+                    <div class="fadeBox" id="joker">
+                        <div class="fadeInfo">
+                            <h2>Joker</h2>
+                            <form method="GET" action="/pages/individualMovies.html">
+                                <button name="movieId" value="tt7286456">More Info</button>
+                            </form>
+                        </div>
                     </div>
-                    <div id="fightClub">
-                        <form method="GET" action="/pages/individualMovies.html">
-                            <button name="movieId" value="tt0137523">More Info</button>
-                        </form>
+                    <div class="fadeBox" id="fightClub">
+                        <div class="fadeInfo">
+                            <h2>FightClub</h2>
+                            <form method="GET" action="/pages/individualMovies.html">
+                                <button name="movieId" value="tt0137523">More Info</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -170,6 +181,7 @@
                     <li><a href="#enola">Enola Holmes</a></li>
                     <li><a href="#theDevil">The Devil All The Time</a></li>
                     <li><a href="#social">The Social Dilemma</a></li>
+                    <li><a href="#topMovies">Top Movies</a></li>
                 </ul>
             </div>
             <div id="gitHub">
