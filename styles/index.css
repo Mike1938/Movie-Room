@@ -111,7 +111,8 @@ hr{
     padding-left: 40px;
 }
 .movieInfo h3{
-    text-align: center;
+    text-align: left;
+    padding-left: 40px;
     font-size: 2rem;
 }
 .shortInfo{

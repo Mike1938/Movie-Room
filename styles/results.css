@@ -7,7 +7,7 @@ body, html{
     background-color: #313B4E;
 }
 #content{
-    padding-bottom: 15.5rem ;
+    padding-bottom: 18.5rem ;
 }
 #pageContainer{
     position: relative;
@@ -43,9 +43,12 @@ form{
     border-radius: 5px;
     height: 30px;
     width: 100px;
+    transition: ease-in 100ms;
 }
 #formButton:hover{
+    transition: ease-in 100ms;
     cursor: pointer;
+    background-color: #ce3939;
 }
 /* ?================= */
 /*? Movie results syling */
