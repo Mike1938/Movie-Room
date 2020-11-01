@@ -15,7 +15,31 @@ body, html{
     height: 100%;
 }
 header h1{
-    margin-top: 100px;
+    width: 60%;
     text-align: center;
+    margin: 100px auto;
     padding: 10px;
+    background-color: #DE5B5B;
+    border-radius: 12px;
+}
+h2{
+    font-size: 2rem;
+}
+#copyCreds{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #494769;
+    padding: 30px;
+    border-radius: 12px;
+}
+.never{
+    color: #ec4a4a;
+    font-weight: 800;
+}
+#copy a, #credits a{
+    transition: ease-in 100ms;
+}
+#copy a:hover, #credits a:hover{
+    transition: ease-in 100ms;
+    color: #ec4a4a
 }
