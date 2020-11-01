@@ -73,12 +73,12 @@ img{
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    transition: ease-in 200ms;
+    transition: ease-in 100ms;
 }
 #movieContainer button:hover{
-    transition: ease-in 200ms;
+    transition: ease-in 100ms;
     cursor: pointer;
-    box-shadow: 2px 2px 0px #3f3e3e;
+    background-color: #ce3939;
 }
 /*? ============== */
 .valError::placeholder {
