@@ -58,7 +58,7 @@ span{
 }
 #searchAgain button{
     color: #ffff;
-    background-color: #f04545;
+    background-color: #FF6363;
     border-radius: 5px;
     width: 500px;
     height: 30px;
@@ -68,7 +68,7 @@ span{
 #searchAgain button:hover{
     cursor: pointer;
     transition: ease-in 100ms;
-    background-color: #ac3232;
+    background-color: #ce3939;
 }
 ul{
     padding: 0;

@@ -4,7 +4,6 @@ axios(`http://www.omdbapi.com/?apikey=${key.apiKey}&plot=full&i=${movieId.get("m
         if (response.data.Response === "False") {
             window.location.replace("/pages/search.html");
         }
-        console.log(response.data);
         const movie = response.data;
         let moviePoster = movie.Poster;
         if (moviePoster === "N/A") {
