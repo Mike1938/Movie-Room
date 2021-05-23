@@ -17,6 +17,37 @@ header li:nth-of-type(1){
 #content{
     height: 100%;
 }
+/*? Navigation bar styles */
+#liContainer{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: #D86767;
+    box-shadow: 2px 2px 15px #242121;
+    width: 100%;
+}
+.links{
+    transition: ease-in 200ms;
+    float: left; 
+    padding: 0 8px;
+    display: inline;
+    height: 40px;
+    text-align: center;
+}
+.links:hover{
+    transition: ease-in 200ms;
+    background-color: #b84e4e;
+}
+.links:nth-of-type(2) ,.links:nth-of-type(3){
+    float: right;
+}
+.navAlinks{
+    color: #ffff;
+    text-decoration: none;
+    line-height: 40px;
+}
 /** firts section of page/landing page area */
 #mainSearch{
     height: 100vh;
