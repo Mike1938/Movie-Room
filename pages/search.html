@@ -14,8 +14,8 @@
 
 <body>
     <div id="pageContainer">
-        <div id="content">
-            <header>
+        <div id="searchSyles">
+            <header id="navSearch">
                 <nav>
                     <ul id="liContainer">
                         <li class="links"><a class="navAlinks" href="/pages/index.html">Home</a></li>
@@ -23,11 +23,11 @@
                         <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
                     </ul>
                 </nav>
-                <form id="formContainer" action="results.html" method="GET" autocomplete="off"
+                <form id="searchFormContainer" action="results.html" method="GET" autocomplete="off"
                     onsubmit="return validate()">
                     <label for="search">Movie Title</label>
                     <input id="searchForm" name="search" type="text" placeholder="Movie Title">
-                    <button id="searchButton">Search</button>
+                    <button class="searchButtons" id="searchButton">Search</button>
                 </form>
             </header>
             <div id="featMovies">
@@ -38,7 +38,7 @@
                         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyJDRzqBTmIwwTS3JfkIX5ErJ-G5g1n1HZZg0iDfOzJndHoXv9"
                             alt="Mulan poster">
                         <form action="/pages/individualMovies.html" method="GET">
-                            <button name="movieId" value="tt4566758">More Info</button>
+                            <button class="searchButtons" name="movieId" value="tt4566758">More Info</button>
                         </form>
                     </div>
                     <div>
@@ -46,7 +46,7 @@
                         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRL5NftthLrQB8UTygm_-jHq1y9V4dHZDHGgOBt4ZZPPdhGfmAm"
                             alt="Onward poster">
                         <form action="/pages/individualMovies.html" method="GET">
-                            <button name="movieId" value="tt7146812">More Info</button>
+                            <button class="searchButtons" name="movieId" value="tt7146812">More Info</button>
                         </form>
                     </div>
                     <div>
@@ -54,13 +54,13 @@
                         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKkupry5uKCFNgfFkbxl10ome6s-Wxib8MEOFK311tvyZgjzCf"
                             alt="Hamilton Poster">
                         <form action="/pages/individualMovies.html" method="GET">
-                            <button name="movieId" value="tt8503618">More Info</button>
+                            <button class="searchButtons" name="movieId" value="tt8503618">More Info</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <footer id= "minFooterCont">
+        <footer id="minFooterCont">
             <div id="minInfoCont">
                 <div>
                     <p><a class="minSocials" href="https://github.com/Mike1938" target="_"><i
