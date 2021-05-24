@@ -7,7 +7,7 @@ body,html{
     margin: 0;
     color: #ffff;
 }
-header li:nth-of-type(1){
+#navMain li:nth-of-type(1){
     background-color: #b84e4e;
 }
 #pageContainer{
@@ -281,6 +281,153 @@ hr{
     text-shadow: 2px 2px 10px rgb(31, 29, 29);
     align-self: center;
 }
+
+/*? About page styles */
+#navAbout li:nth-of-type(2){
+    background-color: #b84e4e;
+}
+#aboutContent h1{
+    font-size: 3.5rem;
+}
+#aboutContent p{
+    font-size: 1.7rem;
+}
+#aboutContent img{
+    padding: 10px 70px;
+    border-radius: 15px;
+    background-color: #494769;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.15);
+    width: 60%;
+    height: 60%;
+}
+#aboutContent hr{
+    margin: 0;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230, 100, 100, 0.85), rgba(0, 0, 0, 0));
+}
+.info{
+    margin: 0 50px;
+}
+#aboutContent h1 , #aboutContent p{
+    text-align: left;
+}
+/*? ====================== */
+/** styling for this website section */
+#thisWebsite{
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+/** ===================== */
+/*? All styling for GOAL section */
+#goal{
+    height: 100vh;
+    background-color: #7288C1;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "info image";
+}
+#goal .info{
+    grid-area: info;
+}
+#goal .imgBackground{
+    grid-area: image;
+}
+/*? ====================== */
+/** all styling for the WHO section */
+#who{
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+/** ========================== */
+/*? all styling for CONTACT section */
+#contact{
+    height: 100vh;
+    background-color: #7288C1;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    grid-template-columns: 1fr 1fr;
+}
+#formContainer{
+    margin: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #494769;
+}
+#formContainer i{
+    margin-top: 15px;
+}
+#formContainer form{
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+#formContainer form input{
+    text-indent: 10px;
+}
+#formContainer form input::placeholder{
+    text-indent: 10px;
+}
+#formContainer input, #formContainer button{
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+#formContainer button{
+    background-color: #df6565;
+    color: #ffff;
+    transition: ease-in 100ms;
+}
+#formContainer button:hover{
+    cursor: pointer;
+    transition: ease-in 100ms;
+    background-color: #b84e4e;
+}
+#formContainer textarea{
+    border-radius: 10px;
+}
+#formContainer h1{
+    margin: 0;
+    margin-bottom: 10px;
+}
+#formContainer li{
+    list-style: none;
+    display: inline;
+    padding: 0 50px;
+}
+#socialList{
+    margin-top: 20px;
+}
+#formContainer ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#formContainer a{
+    color: #ffff;
+    transition: ease-in 100ms;
+}
+#formContainer a:hover{
+    transition: ease-in 100ms;
+    color: #df6565;
+}
+
 /*? Full footer styles */
 #fullFooterContainer{
     box-shadow: 2px 2px 20px rgba(53, 50, 50, 0.5);
@@ -338,6 +485,8 @@ hr{
 #fullFooterContainer #copyRight p{
     font-size: 1rem;
 }
+
+
 /**Min footer styles */
 #minFooterCont{
     position: absolute;
@@ -427,6 +576,36 @@ hr{
         font-size: 1.2rem;
     }
 }
+@media(max-width: 1267px){
+    #aboutContent h1{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+    #aboutContent p{
+        font-size: 1.5rem;
+    }
+    #aboutContent img{
+        width: 35%;
+        height: 35%;
+    }
+    #contact img{
+        display: none;
+    }
+    #thisWebsite{
+        grid-template-columns: 1fr;
+    }
+    #goal{
+        grid-template-columns: 1fr;
+        grid-template-areas: "image"
+        "info";
+    }
+    #who{
+        grid-template-columns: 1fr;
+    }
+    #contact{
+        grid-template-columns: 1fr;
+    }
+}
 @media(max-width: 950px){
     #featureGrid{
         grid-template-columns: 1fr;
@@ -480,5 +659,11 @@ hr{
     .movieFrame{
         width: 350px;
         height: 200px;
+    }
+}
+@media(max-width: 580px){
+    #aboutContent img{
+        width: 50%;
+        height: 50%;
     }
 }
