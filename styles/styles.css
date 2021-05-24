@@ -306,7 +306,7 @@ hr{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230, 100, 100, 0.85), rgba(0, 0, 0, 0));
 }
-.info{
+.aboutInfo{
     margin: 0 50px;
 }
 #aboutContent h1 , #aboutContent p{
@@ -335,7 +335,7 @@ hr{
     grid-template-areas:
     "info image";
 }
-#goal .info{
+#goal .aboutInfo{
     grid-area: info;
 }
 #goal .imgBackground{
@@ -463,6 +463,82 @@ hr{
     transition: ease-in 100ms;
     color: #ec4a4a
 }
+/* *Individual movies site styles */
+
+#indMovStyles{
+    padding-bottom: 26rem;
+}
+.info{
+    font-size: 1.5rem;
+}
+#ratingStar{
+    color: #ece24e;
+}
+.infoLabel{
+    color: #f04545;
+}
+#movie{
+    background-color: #494769;
+    justify-content: center;
+    margin: 100px;
+    border-radius: 12px;
+    padding: 100px;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+#moviePoster{
+    grid-row: 1/3 ;
+    margin: 0 auto;
+}
+#moviePoster img{
+    width: 300;
+    height: 600px;
+}
+#shortInfo{
+    grid-row: 1/3;
+}
+#shortInfo h1{
+    font-size: 3rem;
+}
+#lgInfo h2{
+    color: #f04545;
+    margin-top: 0;
+    font-size: 2rem;
+}
+#searchAgain{
+    justify-self: center;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+#searchAgain button{
+    color: #ffff;
+    background-color: #FF6363;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    transition: ease-in 100ms;
+}
+#searchAgain button:hover{
+    cursor: pointer;
+    transition: ease-in 100ms;
+    background-color: #ce3939;
+}
+#movie ul{
+    padding: 0;
+}
+#shortInfo li{
+    padding-top: 15px ;
+    list-style: none;
+    font-size: 2rem;
+}
+#lgInfo{
+    padding: 20px 50px;
+    grid-column: 1/3 ;
+}
+
 /*? Full footer styles */
 #fullFooterContainer{
     box-shadow: 2px 2px 20px rgba(53, 50, 50, 0.5);
@@ -580,6 +656,29 @@ hr{
     color: #ffff;
 }
 /*! MEDIA QUERIES==========================*/
+@media(max-width:1537px){
+    #movie{
+        margin: 30px 0;
+        padding: 40px;
+    }
+    #moviePoster{
+        grid-row: 1/3 ;
+        grid-column: 1/3;
+    }
+    #shortInfo{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    #lgInfo{
+        padding-left: 0;
+    }
+    #searchAgain{
+        grid-row: 5/6;
+    }
+    #searchAgain button{
+        width: 300px;
+    }
+}
 @media(max-width: 1325px){
     #tenet, #enola, #theDevil, #socialDilemma{
         grid-template-columns: 1fr;
