@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
-require('dotenv').config();
+const dotenv = require('dotenv').config();
 const axios = require('axios');
 const ejs = require('ejs');
 
+app.set("view engine", 'ejs');
+app.use(express.static('./public'));
+
 app.get('/', (req, res) => {
-    res.send('homepage');
+    res.render('index');
 });
 
 
