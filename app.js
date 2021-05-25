@@ -11,8 +11,15 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-
-
+app.get('/about', (req, res) => {
+    res.render('about');
+})
+app.get('/legal', (req, res) => {
+    res.render('legal');
+})
+app.get('/search', (req, res) => {
+    res.render('search')
+})
 app.listen(3000, () => {
     console.log('Server running at port 3000');
 })
