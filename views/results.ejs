@@ -23,14 +23,27 @@
                 </ul>
             </nav>
             <Header>
-                <h1>Movie results for ""</h1>
+                <h1>Movie results for "<%=search%>"</h1>
                 <form action="results.html" method="GET" onsubmit="return validate()" autocomplete="off">
                     <input name="search" id="ResultssearchForm" type="text" placeholder="Movie Title">
                     <button id="formButton">Search</button>
                 </form>
             </Header>
             <section id="movieContainer">
-
+                <%data.forEach(function(d){%>
+                    <div>
+                        <h3>
+                            <%=d.Title%>
+                        </h3>
+                        <img class="size" src="<%=d.Poster%>" alt="Img Not Found">
+                        <p>
+                            <%=d.Year%>
+                        </p>
+                        <form method="GET" action="/individualMovies">
+                            <button name="movieId" value="<%=d.imdbID%>">More Info</button>
+                        </form>
+                    </div>
+                    <%})%>
             </section>
             <footer id="minFooterCont">
                 <div id="minInfoCont">

@@ -23,10 +23,10 @@
                         <li class="links"><a class="navAlinks" href="/search">Search Movies</a></li>
                     </ul>
                 </nav>
-                <form id="searchFormContainer" action="results.html" method="GET" autocomplete="off"
+                <form id="searchFormContainer" action="/search" method="GET" autocomplete="off"
                     onsubmit="return validate()">
                     <label for="search">Movie Title</label>
-                    <input id="searchForm" name="search" type="text" placeholder="Movie Title">
+                    <input id="searchForm" name="q" type="text" placeholder="Movie Title">
                     <button class="searchButtons" id="searchButton">Search</button>
                 </form>
             </header>
