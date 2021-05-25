@@ -1,0 +1,25 @@
+{
+  "name": "movie-room",
+  "version": "1.0.0",
+  "description": "A movie search website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike1938/Movie-Room.git"
+  },
+  "author": "MIKE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mike1938/Movie-Room/issues"
+  },
+  "homepage": "https://github.com/Mike1938/Movie-Room#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
