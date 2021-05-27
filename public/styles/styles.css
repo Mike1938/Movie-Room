@@ -923,12 +923,20 @@ hr{
     #featureGrid{
         grid-template-columns: 1fr;
     }
+    #searchGrid h1{
+        font-size: 3.5rem
+    }
     .movieFrame{
         width: 500px;
         height: 300px;
     }
     #mainSearch form{
         grid-template-columns: 400px;
+    }
+}
+@media(max-width: 833px){
+    .movieTitle{
+        font-size: 1.8rem;
     }
 }
 @media(max-width: 801px){
@@ -955,7 +963,7 @@ hr{
     }
 }
 @media(max-width: 700px){
-    #footerContainer{
+    #fullFooterContainer{
         text-align: center;
         grid-template-columns: 1fr 1fr;
         gap: 0;
