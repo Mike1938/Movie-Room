@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const axios = require('axios');
 const ejs = require('ejs');
 const { response } = require('express');
+const port = process.env.PORT || 3000
 
 app.set("view engine", 'ejs');
 app.use(express.static('./public'));
@@ -79,6 +80,6 @@ app.get('/search/movieDetails/:movId', async (req, res)=>{
     }
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server running on port 3000");
 })
