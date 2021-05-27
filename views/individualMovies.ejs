@@ -26,10 +26,34 @@
             <a name="top"></a>
             <section id="movie">
                 <div id="searchAgain">
-                    <form method="GET" action="/pages/search.html">
+                    <form method="GET" action="/search">
                         <button>Search Again</button>
                     </form>
                 </div>
+                <%if(data === 'False'){%>
+                    <h1>The movie your were looking was not found...</h1>
+                <%}else{%>
+                    <div id="moviePoster"><img id="poster" src="<%=data.Poster%>" alt=""></div>
+                    <div id="shortInfo">
+                        <h1 id="title"><%=data.Title%></h1>
+                        <ul>
+                            <li class="info"><span class = 'infoLabel'>Genre:</span> <%=data.Genre%></li>
+                            <li class="info"><span class = 'infoLabel'>Runtime:</span> <%=data.Runtime%></li>
+                            <li class="info"><span class = 'infoLabel'>Released:</span> <%=data.Released%></li>
+                            <li class="info"><span class = 'infoLabel'>Rated:</span> <%=data.Rated%></li>
+                            <li class="info"><span class = 'infoLabel'>Rating:</span> <span id="ratingStar"><i class="fas fa-star fa-xs"></i></span> <%=data.imdbRating%>/10</li>
+                            <li class="info"><span class = 'infoLabel'>Awards:</span> <%=data.Awards%></li>
+                        </ul>
+                    </div>
+                    <div id="lgInfo">
+                        <h2>plot</h2>
+                        <p class="info"><%=data.Plot%></p>
+                        <p class="info"><span class = 'infoLabel'>Director:</span> <%=data.Director%></p>
+                        <p class="info"><span class = 'infoLabel'>Writers:</span> <%=data.Writer%></p>
+                        <p class="info"><span class = 'infoLabel'>Actors:</span> <%=data.Actors%></p>
+                        <p class="info"><span class = 'infoLabel'>Production:</span> <%=data.Production%></p>
+                    </div>
+                <%}%>
             </section>
         </div>
         <footer id="minFooterCont">

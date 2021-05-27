@@ -30,7 +30,7 @@
                 </form>
             </Header>
             <section id="movieContainer">
-                <%if(data === undefined){%>
+                <%if(data === 'False'){%>
                     <h1 id="wasNotFound">The Movie "<%=search%>" was not found, please try again...</h1>
                     <%}else{%>
                         <%data.forEach(function(d){%>
@@ -42,8 +42,8 @@
                                 <p>
                                     <%=d.Year%>
                                 </p>
-                                <form method="GET" action="/individualMovies">
-                                    <button name="movieId" value="<%=d.imdbID%>">More Info</button>
+                                <form method="GET" action="/search/movieDetails/<%=d.imdbID%>">
+                                    <button>More Info</button>
                                 </form>
                             </div>
                             <%})%>
