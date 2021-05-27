@@ -4,24 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>Movie Info</title>
+    <%-include('links')-%>
+        <title>Movie Info</title>
 </head>
 
 <body>
     <div id="pageContainer">
         <div id="indMovStyles">
             <header>
-                <nav>
-                    <ul id="liContainer">
-                        <li class="links"><a class="navAlinks" href="/">Home</a></li>
-                        <li class="links"><a class="navAlinks" href="/about">About</a></li>
-                        <li class="links"><a class="navAlinks" href="/search">Search Movies</a></li>
-                    </ul>
-                </nav>
+                <%-include('nav')-%>
             </header>
             <a name="top"></a>
             <section id="movie">
@@ -30,58 +21,58 @@
                         <button>Search Again</button>
                     </form>
                 </div>
-                <%if(data === 'False'){%>
+                <%if(data==='False' ){%>
                     <h1>The movie your were looking was not found...</h1>
-                <%}else{%>
-                    <div id="moviePoster"><img id="poster" src="<%=data.Poster%>" alt=""></div>
-                    <div id="shortInfo">
-                        <h1 id="title"><%=data.Title%></h1>
-                        <ul>
-                            <li class="info"><span class = 'infoLabel'>Genre:</span> <%=data.Genre%></li>
-                            <li class="info"><span class = 'infoLabel'>Runtime:</span> <%=data.Runtime%></li>
-                            <li class="info"><span class = 'infoLabel'>Released:</span> <%=data.Released%></li>
-                            <li class="info"><span class = 'infoLabel'>Rated:</span> <%=data.Rated%></li>
-                            <li class="info"><span class = 'infoLabel'>Rating:</span> <span id="ratingStar"><i class="fas fa-star fa-xs"></i></span> <%=data.imdbRating%>/10</li>
-                            <li class="info"><span class = 'infoLabel'>Awards:</span> <%=data.Awards%></li>
-                        </ul>
-                    </div>
-                    <div id="lgInfo">
-                        <h2>plot</h2>
-                        <p class="info"><%=data.Plot%></p>
-                        <p class="info"><span class = 'infoLabel'>Director:</span> <%=data.Director%></p>
-                        <p class="info"><span class = 'infoLabel'>Writers:</span> <%=data.Writer%></p>
-                        <p class="info"><span class = 'infoLabel'>Actors:</span> <%=data.Actors%></p>
-                        <p class="info"><span class = 'infoLabel'>Production:</span> <%=data.Production%></p>
-                    </div>
-                <%}%>
+                    <%}else{%>
+                        <div id="moviePoster"><img id="poster" src="<%=data.Poster%>" alt=""></div>
+                        <div id="shortInfo">
+                            <h1 id="title">
+                                <%=data.Title%>
+                            </h1>
+                            <ul>
+                                <li class="info"><span class='infoLabel'>Genre:</span>
+                                    <%=data.Genre%>
+                                </li>
+                                <li class="info"><span class='infoLabel'>Runtime:</span>
+                                    <%=data.Runtime%>
+                                </li>
+                                <li class="info"><span class='infoLabel'>Released:</span>
+                                    <%=data.Released%>
+                                </li>
+                                <li class="info"><span class='infoLabel'>Rated:</span>
+                                    <%=data.Rated%>
+                                </li>
+                                <li class="info"><span class='infoLabel'>Rating:</span> <span id="ratingStar"><i
+                                            class="fas fa-star fa-xs"></i></span>
+                                    <%=data.imdbRating%>/10
+                                </li>
+                                <li class="info"><span class='infoLabel'>Awards:</span>
+                                    <%=data.Awards%>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="lgInfo">
+                            <h2>plot</h2>
+                            <p class="info">
+                                <%=data.Plot%>
+                            </p>
+                            <p class="info"><span class='infoLabel'>Director:</span>
+                                <%=data.Director%>
+                            </p>
+                            <p class="info"><span class='infoLabel'>Writers:</span>
+                                <%=data.Writer%>
+                            </p>
+                            <p class="info"><span class='infoLabel'>Actors:</span>
+                                <%=data.Actors%>
+                            </p>
+                            <p class="info"><span class='infoLabel'>Production:</span>
+                                <%=data.Production%>
+                            </p>
+                        </div>
+                        <%}%>
             </section>
         </div>
-        <footer id="minFooterCont">
-            <div id="minInfoCont">
-                <div>
-                    <p><a class="minSocials" href="https://github.com/Mike1938" target="_"><i
-                                class="fab fa-github fa-2x"></i></a></p>
-                    <p><a href="https://twitter.com/home" target="_"><i class="fab fa-twitter fa-2x"></i></a></p>
-                </div>
-                <div>
-                    <h3>Other Pages</h3>
-                    <ul id="minOtherPages">
-                        <li><a href="/">HomePage</a></li>
-                        <li><a href="/search">Search for movies</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/legal">Legal</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p><a class="minSocials" href="https://www.facebook.com/" target="_"><i
-                                class="fab fa-facebook fa-2x"></i></a></p>
-                    <p><a href="mailto:mmaldonadosan&#64;outlook&#46;com"><i class="far fa-envelope fa-2x"></i></a></p>
-                </div>
-            </div>
-            <p><a href="#top"><i class="fas fa-arrow-up fa-lg"></i> Back to top</a></p>
-            <hr>
-            <p>&copy Malsan inc. 2020</p>
-        </footer>
+        <%-include('minFooter')-%>
     </div>
 </body>
 

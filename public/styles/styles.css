@@ -815,6 +815,38 @@ hr{
     transition: ease-in 100ms;
     color: #ffff;
 }
+/* ? 404 page */
+#styles404{
+    padding-bottom: 28.5rem
+}
+#cont404{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin: 10px;
+    
+}
+#title404{
+    order: 1;
+    font-size: 5rem;
+    text-align: center;
+}
+#img404{
+    width: 80%;
+    order: 2;
+    margin: 0 auto;
+}
+#back404{
+    order: 3;
+    margin-top: 40px;
+    width: 70%;
+    text-align: center;
+}
+#back404 button{
+    width: 70%;
+    height: 30px;
+}
 /*! MEDIA QUERIES==========================*/
 @media(max-width: 1577px){
     #movieContainer{
@@ -984,6 +1016,12 @@ hr{
     }
 }
 @media(max-width: 700px){
+    #title404{
+        font-size: 4rem;
+    }
+    #styles404{
+        padding-bottom: 1rem
+    }
     #fullFooterContainer{
         text-align: center;
         grid-template-columns: 1fr 1fr;

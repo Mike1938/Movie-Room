@@ -38,46 +38,49 @@ const verifyStrLen = data => {
     }
     return data;
 }
-const fetchMovies = async (search , type) =>{
+const fetchMovies = async (search, type) => {
     let searchMethod;
-    if(type === 'id'){
+    if (type === 'id') {
         searchMethod = `&i=${search}`
-    }else{
+    } else {
         searchMethod = `&s=${search}&type=movie`
     }
-    try{
+    try {
         const results = await axios.get(`http://www.omdbapi.com/?apikey=${process.env.apikey}${searchMethod}`)
         return results.data
     }
-    catch(e){
+    catch (e) {
         console.log(e)
     }
 }
-app.get('/search', async(req, res) => {
+app.get('/search', async (req, res) => {
     const { q } = req.query;
     if (!q) {
         res.render('search');
     }
     else {
-            const results = await fetchMovies(q, 'search');
-            if (results.Response === 'False') {
-                res.render('results', { data: results.Response, search: q });
-            } else {
-                verifyImg(results.Search);
-                verifyStrLen(results.Search);
-                res.render('results', { data: results.Search, search: q })
-            }
+        const results = await fetchMovies(q, 'search');
+        if (results.Response === 'False') {
+            res.render('results', { data: results.Response, search: q });
+        } else {
+            verifyImg(results.Search);
+            verifyStrLen(results.Search);
+            res.render('results', { data: results.Search, search: q })
+        }
     }
 })
-app.get('/search/movieDetails/:movId', async (req, res)=>{
-    const {movId} = req.params;
+app.get('/search/movieDetails/:movId', async (req, res) => {
+    const { movId } = req.params;
     const results = await fetchMovies(movId, 'id');
     if (results.Response === 'False') {
         res.render('individualMovies', { data: results.Response, search: movId });
     } else {
         verifyImg(results);
-        res.render('individualMovies', { data: results})
+        res.render('individualMovies', { data: results })
     }
+})
+app.get('*', (req, res) => {
+    res.render('404')
 })
 
 app.listen(port, () => {
