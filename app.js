@@ -55,7 +55,7 @@ const fetchMovies = async (search , type) =>{
 app.get('/search', async(req, res) => {
     const { q } = req.query;
     if (!q) {
-        res.render('search', { error: "No movie was typed, Try Again" });
+        res.render('search');
     }
     else {
             const results = await fetchMovies(q, 'search');
