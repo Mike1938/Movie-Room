@@ -74,7 +74,7 @@ body,html{
 }
 #mainSearch form{
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 50%;
     justify-content: center;
     gap: 10px;
 }
@@ -86,7 +86,7 @@ body,html{
 #mainSearch button{
     background-color: #FF6363;
     color: #ffff;
-    width: 300px;
+    width: 45%;
     justify-self: center;
     height: 30px;
     border-radius: 8px;
@@ -153,8 +153,8 @@ hr{
     color: #b84e4e;
 }
 .movieFrame{
-    width: 800px ;
-    height: 450px;
+    width: 850px ;
+    height: 500px;
 }
 .movieInfo li{
     list-style: none;
@@ -168,7 +168,7 @@ hr{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -182,7 +182,7 @@ hr{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,7 +196,7 @@ hr{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -210,7 +210,7 @@ hr{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -489,15 +489,15 @@ hr{
     grid-template-columns: repeat(2,1fr);
 }
 #moviePoster{
-    grid-row: 1/3 ;
+    grid-row: 1/2 ;
     margin: 0 auto;
 }
-#moviePoster img{
+/* #moviePoster img{
     width: 300;
     height: 600px;
-}
+} */
 #shortInfo{
-    grid-row: 1/3;
+    grid-row: 2/3;
 }
 #shortInfo h1{
     font-size: 3rem;
@@ -510,7 +510,6 @@ hr{
 #searchAgain{
     justify-self: center;
     grid-column: 1/3;
-    grid-row: 4/5;
 }
 #searchAgain button{
     color: #ffff;
@@ -639,7 +638,7 @@ hr{
     border: none;
     font-size: 1rem;
     text-indent: 10px;
-    width: 50%;
+    width: 60%;
     height: 30px;
     border-radius: 8px;
 }
@@ -659,7 +658,7 @@ hr{
 }
 /* ?================= */
 /*? Movie results syling */
-#resultsContent img{
+.size{
     width: 300px;
     height: 450px;
 }
@@ -667,7 +666,7 @@ hr{
     margin: 20px 15px ;
 }
 #movieContainer{
-    margin: 50px;
+    margin: 40px;
     border-radius: 12px;
     background-color: #494769;
     gap: 40px;
@@ -680,7 +679,7 @@ hr{
 #movieContainer button{
     background-color: #FF6363;
     color: #ffff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 5px;
     border: none;
     transition: ease-in 100ms;
@@ -698,7 +697,7 @@ hr{
 }
 #wasNotFound{
     grid-column: 1/5;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 /*? Full footer styles */
 #fullFooterContainer{
@@ -824,22 +823,27 @@ hr{
 }
 @media(max-width:1537px){
     #movie{
+        text-align: center;
+        grid-template-columns: 1fr;
         margin: 30px 0;
         padding: 40px;
     }
+    .infoLabel{
+        display: block;
+    }
     #moviePoster{
-        grid-row: 1/3 ;
         grid-column: 1/3;
     }
     #shortInfo{
-        grid-row: 3/4;
         grid-column: 1/3;
     }
     #lgInfo{
         padding-left: 0;
+        padding-right: 0;
+        grid-column: 1/3;
     }
     #searchAgain{
-        grid-row: 5/6;
+        grid-column: 1/3;
     }
     #searchAgain button{
         width: 300px;
@@ -848,6 +852,9 @@ hr{
 @media(max-width: 1325px){
     #tenet, #enola, #theDevil, #socialDilemma{
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 30px;
+        column-gap: 0;
         grid-row: 1fr;
     }
     .movieTitle h2{
@@ -856,20 +863,16 @@ hr{
     }
     .movieTitle{
         grid-row: 1;
+        font-size: 2rem;
     }
     .movieFrame{
-        width: 700px;
-        height: 400px;
-        grid-row: 2;
+        grid-row: 2/3;
     }
-    .movieTitle{
-        font-size: 2.5rem;
-    }
+    
     .movieInfo{
         grid-column: 1/3;
         grid-row: 3;
-        margin: 0;
-        border-radius: 0;
+        margin: 0 auto;
         font-size: 1.2rem;
     }
     .movieInfo li{
@@ -882,9 +885,10 @@ hr{
         margin-top: 0;
     }
     #aboutContent p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     #aboutContent img{
+        margin: 40px 0;
         width: 35%;
         height: 35%;
     }
@@ -892,17 +896,22 @@ hr{
         display: none;
     }
     #thisWebsite{
+        margin-top: 40px;
+        height: 100%;
         grid-template-columns: 1fr;
     }
     #goal{
+        height: 100%;
         grid-template-columns: 1fr;
         grid-template-areas: "image"
         "info";
     }
     #who{
+        height: 100%;
         grid-template-columns: 1fr;
     }
     #contact{
+        height: 100%;
         grid-template-columns: 1fr;
     }
 }
@@ -915,6 +924,10 @@ hr{
     }
 }
 @media(max-width: 1020px){
+    .movieFrame{
+        width: 400px;
+        height: 470px;
+    }
     #movies{
         grid-template-columns: repeat(2,1fr);
     }
@@ -924,14 +937,17 @@ hr{
         grid-template-columns: 1fr;
     }
     #searchGrid h1{
-        font-size: 3.5rem
+        font-size: 4rem
+    }
+    #mainSearch p{
+        font-size: 1rem;
     }
     .movieFrame{
-        width: 500px;
-        height: 300px;
+        width: 95%;
+        height: 350px;
     }
     #mainSearch form{
-        grid-template-columns: 400px;
+        grid-template-columns: 60%;
     }
 }
 @media(max-width: 833px){
@@ -941,7 +957,9 @@ hr{
 }
 @media(max-width: 801px){
     #formButton{
-        width: 50px;
+        margin: 10px auto;
+        display: block;
+        width: 30%;
         font-size: .6rem;
     }
     #resultsContent h1{
@@ -954,6 +972,9 @@ hr{
 @media(max-width: 798px){
     #movies{
         grid-template-columns: 1fr;
+    }
+    #searchFormContainer{
+        padding: 80px 50px;
     }
     #searchFormContainer label{
         font-size: 2.5rem;
@@ -1003,11 +1024,26 @@ hr{
     #legalStyles h1{
         font-size: 2rem;
     }
+    .size{
+        width: 80%;
+        height: 70%;
+    }
+    #indMovStyles{
+        margin: 20px 0;
+    }
 }
 @media(max-width:585px){
+    .imgBackground img{
+        width: 50%;
+        height: 50%;
+    }
     .movieFrame{
         width: 350px;
         height: 200px;
+    }
+    searchGrid h1{
+        margin-top: 20%;
+        font-size: 3.5rem;
     }
 }
 @media(max-width: 580px){
