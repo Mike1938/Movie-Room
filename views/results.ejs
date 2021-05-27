@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Movie Results</title>
+</head>
+
+<body>
+    <div id="pageContainer">
+        <div id="resultsContent">
+            <a name="top"></a>
+            <nav>
+                <ul id="liContainer">
+                    <li class="links"><a class="navAlinks" href="/">Home</a></li>
+                    <li class="links"><a class="navAlinks" href="/about">About</a></li>
+                    <li class="links"><a class="navAlinks" href="/search">Search Movies</a></li>
+                </ul>
+            </nav>
+            <Header>
+                <h1>Movie results for "<%=search%>"</h1>
+                <form action="/search" method="GET" onsubmit="return validate()" autocomplete="off">
+                    <input name="q" id="ResultssearchForm" type="text" placeholder="Movie Title">
+                    <button id="formButton">Search</button>
+                </form>
+            </Header>
+            <section id="movieContainer">
+                <%if(data === 'False'){%>
+                    <h1 id="wasNotFound">The Movie "<%=search%>" was not found, please try again...</h1>
+                    <%}else{%>
+                        <%data.forEach(function(d){%>
+                            <div>
+                                <h3>
+                                    <%=d.Title%>
+                                </h3>
+                                <img class="size" src="<%=d.Poster%>" alt="Img Not Found">
+                                <p>
+                                    <%=d.Year%>
+                                </p>
+                                <form method="GET" action="/search/movieDetails/<%=d.imdbID%>">
+                                    <button>More Info</button>
+                                </form>
+                            </div>
+                            <%})%>
+                    <%}%>
+            </section>
+            <footer id="minFooterCont">
+                <div id="minInfoCont">
+                    <div>
+                        <p><a class="minSocials" href="https://github.com/Mike1938" target="_"><i
+                                    class="fab fa-github fa-2x"></i></a></p>
+                        <p><a href="https://twitter.com/home" target="_"><i class="fab fa-twitter fa-2x"></i></a></p>
+                    </div>
+                    <div>
+                        <h3>Other Pages</h3>
+                        <ul id="minOtherPages">
+                            <li><a href="/">HomePage</a></li>
+                            <li><a href="/search">Search for movies</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/legal">Legal</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><a class="minSocials" href="https://www.facebook.com/" target="_"><i
+                                    class="fab fa-facebook fa-2x"></i></a></p>
+                        <p><a href="mailto:mmaldonadosan&#64;outlook&#46;com"><i class="far fa-envelope fa-2x"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#top"><i class="fas fa-arrow-up fa-lg"></i> Back to top</a></p>
+                <hr>
+                <p>&copy Malsan inc. 2020</p>
+        </div>
+        </footer>
+    </div>
+    <script src="/scripts/validateForms.js"></script>
+</body>
+
+</html>

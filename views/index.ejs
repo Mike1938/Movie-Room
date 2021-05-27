@@ -7,21 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/fullFooter.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Movie Room</title>
 </head>
 
 <body>
     <div id="pageContainer">
         <div id="content">
-            <header>
+            <header id="navMain">
                 <nav>
                     <ul id="liContainer">
-                        <li class="links"><a class="navAlinks" href="/pages/index.html">Home</a></li>
-                        <li class="links"><a class="navAlinks" href="/pages/about.html">About</a></li>
-                        <li class="links"><a class="navAlinks" href="/pages/search.html">Search Movies</a></li>
+                        <li class="links"><a class="navAlinks" href="/">Home</a></li>
+                        <li class="links"><a class="navAlinks" href="/about">About</a></li>
+                        <li class="links"><a class="navAlinks" href="/search">Search Movies</a></li>
                     </ul>
                 </nav>
             </header>
@@ -33,9 +31,9 @@
                         <p>The right place to search for the best movies</p>
                     </div>
                     <div>
-                        <form method="GET" action="/pages/results.html" onsubmit="return validate()" autocomplete="off">
+                        <form method="GET" action="/search" onsubmit="return validate()" autocomplete="off">
                             <label for="search">Search For Title</label>
-                            <input id="searchForm" name="search" type="text" placeholder="Write Movie title">
+                            <input id="searchForm" name="q" type="text" placeholder="Write Movie title">
                             <button>Search</button>
                         </form>
                     </div>
@@ -148,24 +146,24 @@
                     <div class="fadeBox" id="inception">
                         <div class="fadeInfo">
                             <h2>Inception</h2>
-                            <form method="GET" action="/pages/individualMovies.html">
-                                <button name="movieId" value="tt1375666">More Info</button>
+                            <form method="GET" action="/search/movieDetails/tt1375666">
+                                <button>More Info</button>
                             </form>
                         </div>
                     </div>
                     <div class="fadeBox" id="joker">
                         <div class="fadeInfo">
                             <h2>Joker</h2>
-                            <form method="GET" action="/pages/individualMovies.html">
-                                <button name="movieId" value="tt7286456">More Info</button>
+                            <form method="GET" action="/search/movieDetails/tt7286456">
+                                <button>More Info</button>
                             </form>
                         </div>
                     </div>
                     <div class="fadeBox" id="fightClub">
                         <div class="fadeInfo">
                             <h2>FightClub</h2>
-                            <form method="GET" action="/pages/individualMovies.html">
-                                <button name="movieId" value="tt0137523">More Info</button>
+                            <form method="GET" action="/search/movieDetails/tt0137523">
+                                <button>More Info</button>
                             </form>
                         </div>
                     </div>
@@ -173,7 +171,7 @@
             </section>
         </div>
         <hr>
-        <footer id="footerContainer">
+        <footer id="fullFooterContainer">
             <div id="pageSections">
                 <h2>Page Sections</h2>
                 <ul>
@@ -199,10 +197,10 @@
             <div id="otherPages">
                 <h2>Other Pages</h2>
                 <ul>
-                    <li><a href="/pages/index.html">HomePage</a></li>
-                    <li><a href="/pages/search.html">Search Movies</a></li>
-                    <li><a href="/pages/about.html">About Us</a></li>
-                    <li><a href="/pages/legal.html">Legal</a></li>
+                    <li><a href="/">HomePage</a></li>
+                    <li><a href="/search">Search Movies</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/legal">Legal</a></li>
                 </ul>
             </div>
             <div id="top">
